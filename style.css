@@ -39,7 +39,7 @@ body {
     --clr-blue: #F0F5FA;
     --clr-gray: #B8B8B8;
     --clr-selection: #F8E1B0;
-    --fw-font: 100;
+    --fw: 100;
 }
 
 ::selection {
@@ -49,25 +49,25 @@ body {
 
 h1 {
     font-family: ENL;
-    font-weight: var(--fw-font);
+    font-weight: var(--fw);
     font-size: 50px;
 }
 
 h2{
     font-family: ENR;
-    font-weight: var(--fw-font);
+    font-weight: var(--fw);
     font-size: 40px;
 }
 
 h3{
     font-family: ENL;
-    font-weight: var(--fw-font);
+    font-weight: var(--fw);
     font-size: 30px;
 }
 
 p{
     font-family: NMB;
-    font-weight: var(--fw-font);
+    font-weight: var(--fw);
     font-size: 20px;
 }
 
@@ -294,12 +294,10 @@ p{
     color: var(--clr-gray) !important;
 }
 
-.intro a,
 .project a{
     color: var(--clr-black) !important;
 }
 
-.intro a:hover,
 .project a:hover,
 .about a:hover,
 .contact a:hover,

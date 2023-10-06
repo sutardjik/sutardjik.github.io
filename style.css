@@ -14,7 +14,7 @@
 }
 
 @font-face {
-    font-family: Telegraph;
+    font-family: Telegraf;
     src: url(fonts/pptelegraf-regular.otf);
 }
 
@@ -88,12 +88,13 @@ p{
 }
 
 .social-link{
-    font-family: Telegraph;
+    font-family: Telegraf;
 }
 
 .intro-container {
     width: 60%;
     margin: 0 auto;
+    color: var(--clr-black);
 }
 
 .project {
@@ -118,7 +119,7 @@ p{
 }
 
 .button {
-    font-family: Telegraph;
+    font-family: Telegraf;
     font-size: 20px;
     border: 1px solid;
     border-color: var(--clr-black);

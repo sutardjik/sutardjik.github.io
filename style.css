@@ -180,11 +180,11 @@ p{
     height: 0;
     overflow: hidden;
     z-index: -1;
-    content: url(/img/museum.png);
+    content: url(/img/fashion.png);
 }
 
 .arch-left:hover {
-    background: url(/img/museum.png) no-repeat;
+    background: url(/img/fashion.png) no-repeat;
     background-size: contain;
     opacity: 1;
     transition: opacity .3s;

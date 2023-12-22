@@ -132,7 +132,7 @@ p{
     border: none;
 }
 
-.about-arches-row {
+.arches-row {
     display: flex;
     flex-wrap: wrap;
     background-position: center;
@@ -243,12 +243,12 @@ p{
     margin-top: -10px;
 }
 
-.concl {
+.getintouch {
     padding-top: 50px;
     height: fit-content;
 }
 
-.concl-container {
+.getintouch-container {
     width: 60%;
     margin: 0 auto;
     color: var(--clr-white);
@@ -275,9 +275,8 @@ p{
     display: flex;
 }
 
-.about a,
 .contact a,
-.concl a {
+.getintouch a {
     color: var(--clr-gray) !important;
 }
 
@@ -286,9 +285,8 @@ p{
 }
 
 .intro a:hover,
-.about a:hover,
 .contact a:hover,
-.concl a:hover{
+.getintouch a:hover{
     cursor: cell;
     font-style: italic;
 }
@@ -311,7 +309,7 @@ p{
 @media screen and (max-width: 479px) {
     .intro-container,
     .about-container,
-    .concl-container {
+    .getintouch-container {
         width: 85%;
     }
     .contact-container{
@@ -339,7 +337,7 @@ p{
 @media screen and (min-width: 480px) and (max-width: 767px) {
     .intro-container,
     .about-container,
-    .concl-container {
+    .getintouch-container {
         width: 80%;
     }
     .contact-container{
@@ -368,7 +366,7 @@ p{
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     .intro-container,
     .about-container,
-    .concl-container {
+    .getintouch-container {
         width: 70%;
     }
     .contact-container{
@@ -391,7 +389,7 @@ p{
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
     .intro-container,
     .about-container,
-    .concl-container {
+    .getintouch-container {
         width: 70%;
     }
     .contact-container{

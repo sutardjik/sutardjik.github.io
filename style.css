@@ -14,7 +14,7 @@
 }
 
 @font-face {
-    font-family: Telegraf;
+    font-family: TELEGRAF;
     src: url(fonts/pptelegraf-regular.otf);
 }
 
@@ -29,22 +29,28 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    background: var(--clr-black);
-    cursor: default;
+    background: var(--black);
+    cursor: url(/img/default.png), default;
 }
 
 :root {
-    --clr-black: #0F0F0F;
-    --clr-white: #FFFFFF;
-    --clr-blue: #F0F5FA;
-    --clr-gray: #B8B8B8;
-    --clr-selection: #F8E1B0;
+    --black: #0F0F0F;
+    --white: #FFFFFF;
+    --blue: #F0F5FA;
+    --gray: #B8B8B8;
+    --selection: #F8E1B0;
+    --green: #86C095;
+    --red: #FF5C5C;
+    --mindaro: #DCFF93;
+    --yellow: #FFEA00;
+    --picton: #54ABED;
+    --serenity: #B3CEE5;
     --fw: 100;
 }
 
 ::selection {
-    color: var(--clr-black);
-    background: var(--clr-selection);
+    color: var(--black);
+    background: var(--selection);
 }
 
 h1 {
@@ -53,19 +59,19 @@ h1 {
     font-size: 50px;
 }
 
-h2{
+h2 {
     font-family: ENR;
     font-weight: var(--fw);
     font-size: 40px;
 }
 
-h3{
+h3 {
     font-family: ENL;
     font-weight: var(--fw);
     font-size: 30px;
 }
 
-p{
+p {
     font-family: NMB;
     font-weight: var(--fw);
     font-size: 20px;
@@ -76,47 +82,80 @@ p{
     padding-bottom: 1.5vh;
     text-align: left;
     line-height: 1.5;
-    background: var(--clr-blue);
+    background: var(--blue);
 }
 
 .intro-container {
     width: 60%;
     margin: 0 auto;
-    color: var(--clr-black);
+    color: var(--black);
 }
 
 .intro hr {
     width: 100%;
     height: 1px;
-    background-color: var(--clr-black);
+    background-color: var(--black);
     border: none;
 }
 
-.emphasize{
+.emphasize {
     font-family: ENR;
 }
 
-.deemphasize{
+.deemphasize {
     font-family: ENL;
 }
 
-.social-link{
-    font-family: Telegraf;
+.social-link {
+    font-family: TELEGRAF;
 }
 
 .button {
-    font-family: Telegraf;
+    font-family: TELEGRAF;
     font-size: 20px;
     border: 1px solid;
-    border-color: var(--clr-black);
-    color: var(--clr-black);
+    border-color: var(--black);
+    color: var(--black);
     border-radius: 40px;
-    background-color: var(--clr-blue);
+    background-color: var(--blue);
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     margin: 0.5em 0.5em 0.5em 0;
+}
+
+.button:hover {
+    cursor: url(/img/default.png), default;
+    transition: all .5s ease;
+}
+
+.description:hover {
+    background-color: var(--gray);
+}
+
+.generative-art:hover {
+    background-color: var(--green);
+}
+
+.poem:hover {
+    background-color: var(--red);
+}
+
+.gallery-space:hover {
+    background-color: var(--mindaro);
+}
+
+.lyrics:hover {
+    background-color: var(--picton);
+}
+
+.data-replication:hover {
+    background-color: var(--yellow);
+}
+
+.population:hover {
+    background-color: var(--serenity);
 }
 
 .about {
@@ -128,7 +167,7 @@ p{
 .about hr {
     width: 100%;
     height: 1px;
-    background-color: var(--clr-white);
+    background-color: var(--white);
     border: none;
 }
 
@@ -140,16 +179,16 @@ p{
     justify-content: center;
 }
 
-.about-container{
+.about-container {
     width: 60%;
     margin: 0 auto;
-    color: var(--clr-white);
+    color: var(--white);
 }
 
-.contact-container{
+.contact-container {
     width: 50%;
     margin: 0 auto;
-    color: var(--clr-white);
+    color: var(--white);
 }
 
 .arch-left {
@@ -166,15 +205,15 @@ p{
     height: 0;
     overflow: hidden;
     z-index: -1;
-    content: url(/img/fashion.png);
+    content: url(/img/sculpture.png);
 }
 
 .arch-left:hover {
-    background: url(/img/fashion.png) no-repeat;
+    background: url(/img/sculpture.png) no-repeat;
     background-size: contain;
     opacity: 1;
     transition: opacity .3s;
-    cursor: cell;
+    cursor: url(/img/default.png), default;
 }
 
 .arch-middle {
@@ -199,7 +238,7 @@ p{
     background-size: contain;
     opacity: 1;
     transition: opacity .3s;
-    cursor: cell;
+    cursor: url(/img/default.png), default;
 }
 
 .arch-right {
@@ -224,7 +263,7 @@ p{
     background-size: contain;
     opacity: 1;
     transition: opacity .3s;
-    cursor: cell;
+    cursor: url(/img/default.png), default;
 }
 
 .contact {
@@ -251,7 +290,7 @@ p{
 .getintouch-container {
     width: 60%;
     margin: 0 auto;
-    color: var(--clr-white);
+    color: var(--white);
     overflow: hidden;
 }
 
@@ -277,17 +316,17 @@ p{
 
 .contact a,
 .getintouch a {
-    color: var(--clr-gray) !important;
+    color: var(--gray) !important;
 }
 
-.intro a{
-    color: var(--clr-black) !important;
+.intro a {
+    color: var(--black) !important;
 }
 
 .intro a:hover,
 .contact a:hover,
 .getintouch a:hover{
-    cursor: cell;
+    cursor: url(/img/pointer.png), cell;
     font-style: italic;
 }
 

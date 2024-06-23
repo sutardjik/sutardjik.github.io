@@ -38,7 +38,7 @@ body {
     --white: #FFFFFF;
     --blue: #F0F5FA;
     --gray: #B8B8B8;
-    --selection: #F8E1B0;
+    --selection: #C4CDE6;
     --green: #86C095;
     --red: #FF5C5C;
     --mindaro: #DCFF93;
@@ -130,31 +130,31 @@ p {
     transition: all .5s ease;
 }
 
-.description:hover {
+.gray:hover {
     background-color: var(--gray);
 }
 
-.generative-art:hover {
+.green:hover {
     background-color: var(--green);
 }
 
-.poem:hover {
+.red:hover {
     background-color: var(--red);
 }
 
-.gallery-space:hover {
+.mindaro:hover {
     background-color: var(--mindaro);
 }
 
-.lyrics:hover {
+.picton:hover {
     background-color: var(--picton);
 }
 
-.data-replication:hover {
+.yellow:hover {
     background-color: var(--yellow);
 }
 
-.population:hover {
+.serenity:hover {
     background-color: var(--serenity);
 }
 

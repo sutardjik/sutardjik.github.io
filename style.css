@@ -111,6 +111,7 @@ p {
 }
 
 .button {
+    --_hover-color: var(--gray);
     font-family: TELEGRAF;
     font-size: 20px;
     border: 1px solid;
@@ -128,34 +129,31 @@ p {
 .button:hover {
     cursor: url(/img/default.png), default;
     transition: all .5s ease;
+    background-color: var(--_hover-color);
 }
 
-.gray:hover {
-    background-color: var(--gray);
+.green {
+    --_hover-color: var(--green);
 }
 
-.green:hover {
-    background-color: var(--green);
+.red {
+    --_hover-color: var(--red);
 }
 
-.red:hover {
-    background-color: var(--red);
+.mindaro {
+    --_hover-color: var(--mindaro);
 }
 
-.mindaro:hover {
-    background-color: var(--mindaro);
+.picton {
+    --_hover-color: var(--picton);
 }
 
-.picton:hover {
-    background-color: var(--picton);
+.yellow {
+    --_hover-color: var(--yellow);
 }
 
-.yellow:hover {
-    background-color: var(--yellow);
-}
-
-.serenity:hover {
-    background-color: var(--serenity);
+.serenity {
+    --_hover-color: var(--serenity);
 }
 
 .about {

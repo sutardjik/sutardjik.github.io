@@ -39,11 +39,8 @@ body {
     --blue: #F0F5FA;
     --gray: #B8B8B8;
     --selection: #C4CDE6;
-    --green: #86C095;
-    --red: #FF5C5C;
     --mindaro: #DCFF93;
     --yellow: #FFEA00;
-    --picton: #54ABED;
     --serenity: #B3CEE5;
     --fw: 100;
 }
@@ -132,20 +129,8 @@ p {
     background-color: var(--_hover-color);
 }
 
-.green {
-    --_hover-color: var(--green);
-}
-
-.red {
-    --_hover-color: var(--red);
-}
-
 .mindaro {
     --_hover-color: var(--mindaro);
-}
-
-.picton {
-    --_hover-color: var(--picton);
 }
 
 .yellow {

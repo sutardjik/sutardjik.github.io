@@ -124,9 +124,10 @@ p {
 }
 
 .button:hover {
-    cursor: url(/img/default.png), default;
+    cursor: url(/img/rainbow.png), default;
     transition: all .5s ease;
     background-color: var(--_hover-color);
+    border: 1px dashed;
 }
 
 .mindaro {
@@ -196,7 +197,7 @@ p {
     background-size: contain;
     opacity: 1;
     transition: opacity .3s;
-    cursor: url(/img/default.png), default;
+    cursor: url(/img/rainbow.png), default;
 }
 
 .arch-middle {
@@ -221,7 +222,7 @@ p {
     background-size: contain;
     opacity: 1;
     transition: opacity .3s;
-    cursor: url(/img/default.png), default;
+    cursor: url(/img/rainbow.png), default;
 }
 
 .arch-right {
@@ -246,7 +247,7 @@ p {
     background-size: contain;
     opacity: 1;
     transition: opacity .3s;
-    cursor: url(/img/default.png), default;
+    cursor: url(/img/rainbow.png), default;
 }
 
 .contact {
@@ -309,7 +310,7 @@ p {
 .intro a:hover,
 .contact a:hover,
 .getintouch a:hover{
-    cursor: url(/img/pointer.png), cell;
+    cursor: url(/img/pointer.png), default;
     font-style: italic;
 }
 

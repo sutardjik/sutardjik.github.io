@@ -38,6 +38,7 @@ body {
     --white: #FFFFFF;
     --blue: #F0F5FA;
     --gray: #B8B8B8;
+    --periwinkle: #D0C9F8;
     --selection: #C4CDE6;
     --mindaro: #DCFF93;
     --yellow: #FFEA00;
@@ -108,7 +109,7 @@ p {
 }
 
 .button {
-    --_hover-color: var(--gray);
+    --_hover-color: var(--periwinkle);
     font-family: TELEGRAF;
     font-size: 20px;
     border: 1px solid;

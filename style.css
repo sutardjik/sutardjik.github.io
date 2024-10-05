@@ -43,6 +43,9 @@ body {
     --mindaro: #DCFF93;
     --yellow: #FFEA00;
     --serenity: #B3CEE5;
+    --klein: #112A97;
+    --orange: #FF6330;
+    --green: #86C095;
     --fw: 100;
 }
 
@@ -285,7 +288,7 @@ p {
     animation: scroll-left 90s linear infinite;
     display: inline-block;
 }
-  
+
 @keyframes scroll-left {
     0% {
       transform: translateX(15%);

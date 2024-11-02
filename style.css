@@ -313,7 +313,7 @@ p {
 
 .intro a:hover,
 .contact a:hover,
-.getintouch a:hover{
+.getintouch a:hover {
     cursor: url(/img/pointer.png), default;
     font-style: italic;
 }
@@ -327,7 +327,7 @@ p {
     opacity: 1;
 }
 
-@media(prefers-reduced-motion) {
+@media (prefers-reduced-motion) {
     .hidden {
         transition: none;
     }
@@ -339,9 +339,11 @@ p {
     .getintouch-container {
         width: 85%;
     }
+
     .contact-container{
         width: 75%;
     }
+
     .arch-left,
     .arch-left:hover,
     .arch-middle,
@@ -355,6 +357,7 @@ p {
         margin-right: auto;
         margin-bottom: 30px;
     }
+
     .socials{
         flex-direction: column;
         margin-bottom: 10px;
@@ -367,13 +370,16 @@ p {
     .getintouch-container {
         width: 80%;
     }
+
     .contact-container{
         width: 70%;
     }
+
     .socials{
         flex-direction: column;
         margin-bottom: 10px;
     }
+
     .arch-left,
     .arch-left:hover,
     .arch-middle,
@@ -396,9 +402,11 @@ p {
     .getintouch-container {
         width: 70%;
     }
+    
     .contact-container{
         width: 60%;
     }
+
     .arch-left,
     .arch-left:hover,
     .arch-middle,
@@ -419,9 +427,11 @@ p {
     .getintouch-container {
         width: 70%;
     }
+
     .contact-container{
         width: 60%;
     }
+
     .arch-left,
     .arch-left:hover,
     .arch-middle,

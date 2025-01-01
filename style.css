@@ -218,11 +218,11 @@ p {
     height: 0;
     overflow: hidden;
     z-index: -1;
-    content: url(/img/music.png);
+    content: url(/img/radio.png);
 }
 
 .arch-middle:hover {
-    background: url(/img/music.png) no-repeat;
+    background: url(/img/radio.png) no-repeat;
     background-size: contain;
     opacity: 1;
     transition: opacity .3s;

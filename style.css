@@ -41,7 +41,6 @@ body {
     --periwinkle: #D0C9F8;
     --selection: #C4CDE6;
     --mindaro: #DCFF93;
-    --yellow: #FFEA00;
     --serenity: #B3CEE5;
     --klein: #112A97;
     --orange: #FF6330;
@@ -136,10 +135,6 @@ p {
 
 .mindaro {
     --_hover-color: var(--mindaro);
-}
-
-.yellow {
-    --_hover-color: var(--yellow);
 }
 
 .serenity {

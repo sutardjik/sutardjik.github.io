@@ -277,22 +277,6 @@ p {
     overflow: hidden;
 }
 
-.marquee {
-    white-space: nowrap;
-    overflow: hidden;
-    animation: scroll-left 90s linear infinite;
-    display: inline-block;
-}
-
-@keyframes scroll-left {
-    0% {
-      transform: translateX(15%);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
-}
-
 .socials {
     display: flex;
 }

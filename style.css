@@ -78,7 +78,7 @@ p {
 
 .intro {
     padding-top: 5vh;
-    padding-bottom: 1.5vh;
+    padding-bottom: 2vh;
     text-align: left;
     line-height: 1.5;
     background: var(--blue);
@@ -137,7 +137,6 @@ p {
 }
 
 .about {
-    clear: both;
     padding-top: 1vh;
     line-height: 1.5;
 }
@@ -245,7 +244,6 @@ p {
 }
 
 .contact {
-    clear: both;
     padding-top: 20px;
     padding-bottom: 0px;
 }

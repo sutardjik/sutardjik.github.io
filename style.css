@@ -312,7 +312,7 @@ p {
         width: 85%;
     }
 
-    .contact-container{
+    .contact-container {
         width: 75%;
     }
 
@@ -330,7 +330,7 @@ p {
         margin-bottom: 30px;
     }
 
-    .socials{
+    .socials {
         flex-direction: column;
         margin-bottom: 10px;
     }
@@ -343,11 +343,11 @@ p {
         width: 80%;
     }
 
-    .contact-container{
+    .contact-container {
         width: 70%;
     }
 
-    .socials{
+    .socials {
         flex-direction: column;
         margin-bottom: 10px;
     }
@@ -375,7 +375,7 @@ p {
         width: 70%;
     }
     
-    .contact-container{
+    .contact-container {
         width: 60%;
     }
 
@@ -400,7 +400,7 @@ p {
         width: 70%;
     }
 
-    .contact-container{
+    .contact-container {
         width: 60%;
     }
 
@@ -425,7 +425,7 @@ p {
         width: 60%;
     }
 
-    .contact-container{
+    .contact-container {
         width: 50%;
     }
 }

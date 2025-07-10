@@ -85,7 +85,7 @@ p {
 }
 
 .intro-container {
-    width: 60%;
+    width: 50%;
     margin: 0 auto;
     color: var(--black);
 }
@@ -158,13 +158,13 @@ p {
 }
 
 .about-container {
-    width: 60%;
+    width: 50%;
     margin: 0 auto;
     color: var(--white);
 }
 
 .contact-container {
-    width: 50%;
+    width: 40%;
     margin: 0 auto;
     color: var(--white);
 }
@@ -266,7 +266,7 @@ p {
 }
 
 .getintouch-container {
-    width: 60%;
+    width: 50%;
     margin: 0 auto;
     color: var(--white);
     overflow: hidden;
@@ -417,5 +417,17 @@ p {
         background-position: center;
         margin-left: auto;
         margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1750px) {
+    .intro-container,
+    .about-container,
+    .getintouch-container {
+        width: 60%;
+    }
+
+    .contact-container{
+        width: 50%;
     }
 }

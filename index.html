@@ -13,9 +13,9 @@
     </title>
   </head>
   <body>
-    <div class="intro">
-      <div class="intro-container">
-        <section class="hidden" style="text-align: center">
+    <header class="intro">
+      <div class="container intro-container">
+        <section class="hidden center">
           <h1>
             <span class="emphasize"
               >&#x4b;&#x61;&#x72;&#x65;&#x6e;
@@ -24,23 +24,26 @@
             designs digital experiences with clarity, intention, and human
             insight.
           </h1>
+          <button class="button rainbow-cursor">
+            READ ALL ABOUT IT! &darr;
+          </button>
         </section>
-        <section class="hidden" style="text-align: center">
-          <button class="button">READ ALL ABOUT IT! &darr;</button>
-        </section>
-        <section class="hidden">
-          <h2 style="margin-top: 100px">
-            Selected Work <span style="color: var(--klein)">&#x273A;</span>
+        <section class="hidden mb-xl">
+          <h2 class="mt-xl">
+            Selected Work <span class="text-klein">&#x273A;</span>
           </h2>
-          <hr style="margin-top: -10px" />
-        </section>
-        <section class="hidden">
-          <h3 style="margin-top: 50px; margin-bottom: 5px">
-            <a href="https://dotcalm.pages.dev/" target="_blank">
+          <hr class="hr-tight" />
+          <h3 class="mt-lg mb-xs">
+            <a
+              class="pointer-cursor link-hover"
+              href="https://dotcalm.pages.dev/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               .calm &nearr;
             </a>
           </h3>
-          <p style="margin-top: 5px; margin-bottom: 20px">
+          <p class="mt-xs mb-md">
             <em
               >How would the web feel if it prioritized perception over
               performance?</em
@@ -56,21 +59,19 @@
             approach invites exploration and reflection beyond trends,
             algorithms, or commercial constraints.
           </p>
-          <button class="button mindaro" style="margin-bottom: 100px">
+          <button class="button mindaro rainbow-cursor">
             CREATIVE DIRECTION
           </button>
         </section>
       </div>
-    </div>
-    <div class="about">
-      <div class="about-container">
-        <section class="hidden">
-          <h2 style="margin-top: 100px">
+    </header>
+    <main class="about">
+      <div class="container about-container">
+        <section class="hidden mb-lg">
+          <h2 class="mt-xl">
             Welcome to my corner of the web!
-            <span style="color: var(--orange)">&#x274A;</span>
+            <span class="text-orange">&#x274A;</span>
           </h2>
-        </section>
-        <section class="hidden">
           <p>
             I’m &#x4b;&#x61;&#x72;&#x65;&#x6e;, a self-taught designer from
             &#x53;&#x61;&#x6E;
@@ -78,8 +79,6 @@
             complexity into digital experiences that breathe clarity, intention,
             and focus.
           </p>
-        </section>
-        <section class="hidden">
           <p>
             I combine Computer Science (B.E. 2024) with philosophy and applied
             psychology to design ethically conscious and adaptable digital
@@ -88,8 +87,6 @@
             design with human behavior, guided by curiosity, a belief in human
             potential, and a commitment to fostering meaningful connections.
           </p>
-        </section>
-        <section class="hidden" style="margin-bottom: 70px">
           <p>
             When I’m not dreaming up designs, you’ll find me exploring fine art
             museums, immersing myself in art pop, or meditating on critical
@@ -98,90 +95,78 @@
         </section>
         <section class="hidden">
           <div class="arches-row">
-            <div
-              class="arch-left"
-              onmouseover="this.src = '/img/sculpture.png/'"
-              onmouseout="this.src = '/img/archleft.png/'"
-            ></div>
-            <div
-              class="arch-middle"
-              onmouseover="this.src = '/img/radio.png/'"
-              onmouseout="this.src = '/img/archmiddle.png/'"
-            ></div>
-            <div
-              class="arch-right"
-              onmouseover="this.src = '/img/park.png/'"
-              onmouseout="this.src = '/img/archright.png/'"
-            ></div>
+            <div class="arch arch-left rainbow-cursor"></div>
+            <div class="arch arch-middle rainbow-cursor"></div>
+            <div class="arch arch-right rainbow-cursor"></div>
           </div>
         </section>
       </div>
-    </div>
-    <div class="contact">
-      <div class="contact-container">
-        <section class="hidden">
-          <h3 style="text-align: center" id="contact-question">
-            Curious to connect or collaborate?
-          </h3>
-        </section>
-        <section class="hidden">
-          <h2 style="text-align: center" id="contact-answer">
+    </main>
+    <section class="contact">
+      <div class="narrow-container contact-container">
+        <section class="hidden center">
+          <h3 class="contact-question">Curious to connect or collaborate?</h3>
+          <h2 class="contact-answer">
             <span class="deemphasize"
               >I welcome thoughtful conversation and creative exchange. Feel
               free to
-              <a href="mailto:sutardjik@gmail.com">reach out &nearr;</a>
+              <a
+                class="pointer-cursor link-hover"
+                href="mailto:sutardjik@gmail.com"
+                >reach out &nearr;</a
+              >
               anytime.
             </span>
           </h2>
         </section>
-        <hr style="margin-bottom: 0px" />
+        <hr class="mb-0" />
       </div>
-    </div>
-    <div class="getintouch">
-      <div class="getintouch-container">
+    </section>
+    <footer class="getintouch">
+      <div class="container getintouch-container">
         <section class="hidden">
-          <h2 style="margin-bottom: 0px">
+          <h2 class="mb-0">
             Get in touch
-            <span style="color: var(--green)">&#x2739;</span>
+            <span class="text-green">&#x2739;</span>
           </h2>
           <div class="socials">
-            <p style="padding-right: 20px">
-              <span class="social-link">
-                <a href="mailto:sutardjik@gmail.com"> EMAIL &nearr; </a>
-              </span>
+            <p class="social-link">
+              <a
+                class="pointer-cursor link-hover"
+                href="mailto:sutardjik@gmail.com"
+              >
+                EMAIL &nearr;
+              </a>
             </p>
-            <p style="padding-right: 20px">
-              <span class="social-link">
-                <a href="https://github.com/sutardjik" target="_self">
-                  GITHUB &nearr;</a
-                >
-              </span>
+            <p class="social-link">
+              <a
+                class="pointer-cursor link-hover"
+                href="https://github.com/sutardjik"
+              >
+                GITHUB &nearr;</a
+              >
             </p>
-            <p style="padding-right: 20px">
-              <span class="social-link">
-                <a href="https://are.na/karen" target="_self">
-                  ARE.NA &nearr;</a
-                >
-              </span>
+            <p class="social-link">
+              <a class="pointer-cursor link-hover" href="https://are.na/karen">
+                ARE.NA &nearr;</a
+              >
             </p>
-            <p>
-              <span class="social-link">
-                <a
-                  href="https://open.spotify.com/user/luotmwfqbsqz5ao0gimpfxg2k"
-                  target="_self"
-                >
-                  SPOTIFY &nearr;</a
-                >
-              </span>
+            <p class="social-link">
+              <a
+                class="pointer-cursor link-hover"
+                href="https://open.spotify.com/user/luotmwfqbsqz5ao0gimpfxg2k"
+              >
+                SPOTIFY &nearr;</a
+              >
             </p>
           </div>
-          <p style="margin-top: 10px; margin-bottom: 100px">
+          <p class="mt-sm mb-xl">
             Copyright &#xa9; &#x4b;&#x61;&#x72;&#x65;&#x6e;
             &#x53;&#x75;&#x74;&#x61;&#x72;&#x64;&#x6a;&#x69;
           </p>
         </section>
       </div>
-    </div>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>

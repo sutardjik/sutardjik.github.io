@@ -19,7 +19,7 @@
 }
 
 * {
-    text-decoration: none;
+    box-sizing: border-box;
 }
 
 html, 
@@ -30,7 +30,11 @@ body {
     padding: 0;
     overflow-x: hidden;
     background: var(--black);
-    cursor: url(/img/default.png), default;
+    cursor: var(--defaultcursor);
+}
+
+a {
+    text-decoration: none;
 }
 
 :root {
@@ -44,7 +48,19 @@ body {
     --klein: #112A97;
     --orange: #FF6330;
     --green: #86C095;
+    --defaultcursor: url(/img/default.png), default;
+    --rainbowcursor: url(/img/rainbow.png), default;
+    --pointercursor: url(/img/pointer.png), default;
+    --font-regular: ENR;
+    --font-light: ENL;
+    --font-body: NMB;
+    --font-ui: TELEGRAF;
     --fw: 100;
+    --space-xs: 5px;
+    --space-sm: 10px;
+    --space-md: 20px;
+    --space-lg: 50px;
+    --space-xl: 100px;
 }
 
 ::selection {
@@ -53,40 +69,85 @@ body {
 }
 
 h1 {
-    font-family: ENL;
+    font-family: var(--font-light);
     font-weight: var(--fw);
     font-size: 50px;
 }
 
 h2 {
-    font-family: ENR;
+    font-family: var(--font-regular);
     font-weight: var(--fw);
     font-size: 40px;
 }
 
 h3 {
-    font-family: ENL;
+    font-family: var(--font-light);
     font-weight: var(--fw);
     font-size: 30px;
 }
 
 p {
-    font-family: NMB;
+    font-family: var(--font-body);
     font-weight: var(--fw);
     font-size: 20px;
 }
 
+.emphasize { font-family: var(--font-regular); }
+.deemphasize { font-family: var(--font-light); }
+
+.mt-xs  { margin-top: var(--space-xs); }
+.mt-sm  { margin-top: var(--space-sm); }
+.mt-md  { margin-top: var(--space-md); }
+.mt-lg  { margin-top: var(--space-lg); }
+.mt-xl { margin-top: var(--space-xl); }
+
+.mb-0   { margin-bottom: 0; }
+.mb-xs  { margin-bottom: var(--space-xs); }
+.mb-sm  { margin-bottom: var(--space-sm); }
+.mb-md  { margin-bottom: var(--space-md); }
+.mb-lg  { margin-bottom: var(--space-lg); }
+.mb-xl { margin-bottom: var(--space-xl); }
+
+.pr-md { padding-right: var(--space-md); }
+
+.hr-tight { margin-top: -10px; }
+
+.center {
+    text-align: center;
+}
+
+.text-klein { color: var(--klein); }
+.text-orange { color: var(--orange); }
+.text-green { color: var(--green); }
+
+.rainbow-cursor:hover { cursor: var(--rainbowcursor); }
+.pointer-cursor:hover { cursor: var(--pointercursor); }
+.link-hover:hover { font-style: italic; }
+
+.container {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.narrow-container {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.about-container,
+.contact-container,
+.getintouch-container {
+    color: var(--white);
+}
+
 .intro {
-    padding-top: 5vh;
-    padding-bottom: 2vh;
+    padding: 5vh 0 2vh;
     text-align: left;
     line-height: 1.5;
     background: var(--blue);
 }
 
 .intro-container {
-    width: 50%;
-    margin: 0 auto;
     color: var(--black);
 }
 
@@ -97,42 +158,26 @@ p {
     border: none;
 }
 
-.emphasize {
-    font-family: ENR;
-}
-
-.deemphasize {
-    font-family: ENL;
-}
-
-.social-link {
-    font-family: TELEGRAF;
-}
-
 .button {
     --_hover-color: var(--periwinkle);
-    font-family: TELEGRAF;
+    font-family: var(--font-ui);
     font-size: 20px;
-    border: 1px solid;
-    border-color: var(--black);
+    border: 1px solid var(--black);
     color: var(--black);
     border-radius: 40px;
     background-color: var(--blue);
     padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
     display: inline-block;
     margin: 0.5em 0.5em 0.5em 0;
+    transition: background 0.3s ease, border 0.3s ease;
 }
 
 .button:hover {
-    cursor: url(/img/rainbow.png), default;
-    transition: all .5s ease;
     background-color: var(--_hover-color);
-    border: 1px dashed;
+    border-style: dashed;
 }
 
-.mindaro {
+.button.mindaro {
     --_hover-color: var(--mindaro);
 }
 
@@ -141,121 +186,50 @@ p {
     line-height: 1.5;
 }
 
-.about hr {
-    width: 100%;
-    height: 1px;
-    background-color: var(--white);
-    border: none;
-}
-
 .arches-row {
     display: flex;
     flex-wrap: wrap;
     background-position: center;
-    resize: both;
     justify-content: center;
 }
 
-.about-container {
-    width: 50%;
-    margin: 0 auto;
-    color: var(--white);
-}
-
-.contact-container {
-    width: 40%;
-    margin: 0 auto;
-    color: var(--white);
-}
-
-.arch-left {
+.arch {
     width: 250px;
     height: 350px;
-    background: url(/img/archleft.png) no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: contain;
-    transition: all .3s ease;
+    transition: background 0.3s ease, opacity 0.3s ease;
 }
 
-.arch-left:after {
-    position: absolute;
-    width: 0;
-    height: 0;
-    overflow: hidden;
-    z-index: -1;
-    content: url(/img/sculpture.png);
-}
+.arch-left { background-image: url(/img/archleft.png); }
+.arch-left:hover { background-image: url(/img/sculpture.png); }
 
-.arch-left:hover {
-    background: url(/img/sculpture.png) no-repeat;
-    background-size: contain;
-    opacity: 1;
-    transition: opacity .3s;
-    cursor: url(/img/rainbow.png), default;
-}
+.arch-middle { background-image: url(/img/archmiddle.png); }
+.arch-middle:hover { background-image: url(/img/radio.png); }
 
-.arch-middle {
-    width: 250px;
-    height: 350px;
-    background: url(/img/archmiddle.png) no-repeat;
-    background-size: contain;
-    transition: all .3s ease;
-}
-
-.arch-middle:after {
-    position: absolute;
-    width: 0;
-    height: 0;
-    overflow: hidden;
-    z-index: -1;
-    content: url(/img/radio.png);
-}
-
-.arch-middle:hover {
-    background: url(/img/radio.png) no-repeat;
-    background-size: contain;
-    opacity: 1;
-    transition: opacity .3s;
-    cursor: url(/img/rainbow.png), default;
-}
-
-.arch-right {
-    width: 250px;
-    height: 350px;
-    background: url(/img/archright.png) no-repeat;
-    background-size: contain;
-    transition: all .3s ease;
-}
-
-.arch-right:after {
-    position: absolute;
-    width: 0;
-    height: 0;
-    overflow: hidden;
-    z-index: -1;
-    content: url(/img/park.png);
-}
-
-.arch-right:hover {
-    background: url(/img/park.png) no-repeat;
-    background-size: contain;
-    opacity: 1;
-    transition: opacity .3s;
-    cursor: url(/img/rainbow.png), default;
-}
+.arch-right { background-image: url(/img/archright.png); }
+.arch-right:hover { background-image: url(/img/park.png); }
 
 .contact {
     padding-top: 20px;
-    padding-bottom: 0px;
 }
 
-#contact-question {
+.contact-question {
     margin-top: 150px;
     line-height: 1.5;
 }
 
-#contact-answer {
+.contact-answer {
     line-height: 1.5;
     margin-top: -10px;
+}
+
+.contact hr {
+    width: 100%;
+    height: 1px;
+    background-color: var(--white);
+    border: none;
 }
 
 .getintouch {
@@ -263,36 +237,27 @@ p {
     height: fit-content;
 }
 
-.getintouch-container {
-    width: 50%;
-    margin: 0 auto;
-    color: var(--white);
-    overflow: hidden;
-}
-
 .socials {
     display: flex;
+    gap: 20px;
+}
+
+.social-link {
+    font-family: var(--font-ui);
+}
+
+.intro a {
+    color: var(--black);
 }
 
 .contact a,
 .getintouch a {
-    color: var(--gray) !important;
-}
-
-.intro a {
-    color: var(--black) !important;
-}
-
-.intro a:hover,
-.contact a:hover,
-.getintouch a:hover {
-    cursor: url(/img/pointer.png), default;
-    font-style: italic;
+    color: var(--gray);
 }
 
 .hidden {
     opacity: 0;
-    transition: all 3s;
+    transition: opacity 3s;
 }
 
 .show {
@@ -306,25 +271,15 @@ p {
 }
 
 @media screen and (max-width: 479px) {
-    .intro-container,
-    .about-container,
-    .getintouch-container {
+    .container {
         width: 85%;
     }
 
-    .contact-container {
+    .narrow-container {
         width: 75%;
     }
 
-    .arch-left,
-    .arch-left:hover,
-    .arch-middle,
-    .arch-middle:hover,
-    .arch-right,
-    .arch-right:hover {
-        display: flex;
-        justify-content: space-between;
-        background-position: center;
+    .arch {
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 30px;
@@ -337,95 +292,50 @@ p {
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
-    .intro-container,
-    .about-container,
-    .getintouch-container {
+    .container {
         width: 80%;
     }
 
-    .contact-container {
+    .narrow-container {
         width: 70%;
+    }
+
+    .arch {
+        width: 20.83vw;
+        height: 31.25vw;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .socials {
         flex-direction: column;
         margin-bottom: 10px;
     }
-
-    .arch-left,
-    .arch-left:hover,
-    .arch-middle,
-    .arch-middle:hover,
-    .arch-right,
-    .arch-right:hover {
-        width: 20.83vw;
-        height: 31.25vw;
-        display: flex;
-        justify-content: space-between;
-        background-position: center;
-        margin-left: auto;
-        margin-right: auto;
-    }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-    .intro-container,
-    .about-container,
-    .getintouch-container {
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+    .container {
         width: 70%;
     }
     
-    .contact-container {
+    .narrow-container {
         width: 60%;
     }
 
-    .arch-left,
-    .arch-left:hover,
-    .arch-middle,
-    .arch-middle:hover,
-    .arch-right,
-    .arch-right:hover {
-        width: 19.531vw;
-        height: 26.042vw;
-        background-position: center;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1439px) {
-    .intro-container,
-    .about-container,
-    .getintouch-container {
-        width: 70%;
-    }
-
-    .contact-container {
-        width: 60%;
-    }
-
-    .arch-left,
-    .arch-left:hover,
-    .arch-middle,
-    .arch-middle:hover,
-    .arch-right,
-    .arch-right:hover {
+    .arch {
         width: 19.531vw;
         height: 29.297vw;
-        background-position: center;
         margin-left: auto;
         margin-right: auto;
     }
 }
 
-@media screen and (min-width: 1440px) and (max-width: 1750px) {
-    .intro-container,
-    .about-container,
-    .getintouch-container {
+@media screen and (min-width: 1440px) {
+    .container {
         width: 60%;
     }
 
-    .contact-container {
+    .narrow-container {
         width: 50%;
     }
 }

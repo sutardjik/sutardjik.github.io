@@ -189,28 +189,34 @@ p {
 .arches-row {
     display: flex;
     flex-wrap: wrap;
-    background-position: center;
     justify-content: center;
-    resize: both;
 }
 
 .arch {
+    position: relative;
     width: 250px;
     height: 350px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    transition: background 0.3s ease, opacity 0.3s ease;
 }
 
-.arch-left { background-image: url(/img/archleft.png); }
-.arch-left:hover { background-image: url(/img/sculpture.png); }
+.arch img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: opacity 0.3s ease;
+}
 
-.arch-middle { background-image: url(/img/archmiddle.png); }
-.arch-middle:hover { background-image: url(/img/radio.png); }
+.arch .hover {
+    opacity: 0;
+}
 
-.arch-right { background-image: url(/img/archright.png); }
-.arch-right:hover { background-image: url(/img/park.png); }
+.arch:hover .hover {
+    opacity: 1;
+}
+
+.arch:hover .default {
+    opacity: 0;
+}
 
 .contact {
     padding-top: 20px;

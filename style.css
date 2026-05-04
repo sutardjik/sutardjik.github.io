@@ -191,6 +191,7 @@ p {
     flex-wrap: wrap;
     background-position: center;
     justify-content: center;
+    resize: both;
 }
 
 .arch {

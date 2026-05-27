@@ -112,9 +112,7 @@ p {
 
 .hr-tight { margin-top: -10px; }
 
-.center {
-    text-align: center;
-}
+.center { text-align: center; }
 
 .text-klein { color: var(--klein); }
 .text-orange { color: var(--orange); }

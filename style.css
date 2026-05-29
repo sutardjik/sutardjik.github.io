@@ -38,12 +38,12 @@ body {
     --white: #FFFFFF;
     --blue: #F0F5FA;
     --gray: #B8B8B8;
-    --periwinkle: #D0C9F8;
     --selection: #C4CDE6;
+    --periwinkle: #D0C9F8;
+    --blush: #E7D1C6;
     --mindaro: #DCFF93;
     --klein: #112A97;
     --orange: #FF6330;
-    --blush: #E7D1C6;
     --green: #86C095;
     --defaultcursor: url(/img/default.png), default;
     --rainbowcursor: url(/img/rainbow.png), default;

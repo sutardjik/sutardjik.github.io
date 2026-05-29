@@ -14,7 +14,7 @@
 }
 
 @font-face {
-    font-family: TELEGRAF;
+    font-family: TR;
     src: url(/fonts/pptelegraf-regular.otf);
 }
 
@@ -33,10 +33,6 @@ body {
     cursor: var(--defaultcursor);
 }
 
-a {
-    text-decoration: none;
-}
-
 :root {
     --black: #0F0F0F;
     --white: #FFFFFF;
@@ -47,14 +43,15 @@ a {
     --mindaro: #DCFF93;
     --klein: #112A97;
     --orange: #FF6330;
+    --blush: #E7D1C6;
     --green: #86C095;
     --defaultcursor: url(/img/default.png), default;
     --rainbowcursor: url(/img/rainbow.png), default;
     --pointercursor: url(/img/pointer.png), default;
-    --font-regular: ENR;
-    --font-light: ENL;
+    --font-display: ENR;
+    --font-display-light: ENL;
     --font-body: NMB;
-    --font-ui: TELEGRAF;
+    --font-ui: TR;
     --fw: 100;
     --space-xs: 5px;
     --space-sm: 10px;
@@ -69,19 +66,19 @@ a {
 }
 
 h1 {
-    font-family: var(--font-light);
+    font-family: var(--font-display-light);
     font-weight: var(--fw);
     font-size: 50px;
 }
 
 h2 {
-    font-family: var(--font-regular);
+    font-family: var(--font-display);
     font-weight: var(--fw);
     font-size: 40px;
 }
 
 h3 {
-    font-family: var(--font-light);
+    font-family: var(--font-display-light);
     font-weight: var(--fw);
     font-size: 30px;
 }
@@ -92,8 +89,12 @@ p {
     font-size: 20px;
 }
 
-.emphasize { font-family: var(--font-regular); }
-.deemphasize { font-family: var(--font-light); }
+a {
+    text-decoration: none;
+}
+
+.emphasize { font-family: var(--font-display); }
+.deemphasize { font-family: var(--font-display-light); }
 
 .mt-xs  { margin-top: var(--space-xs); }
 .mt-sm  { margin-top: var(--space-sm); }
@@ -175,9 +176,8 @@ p {
     border-style: dashed;
 }
 
-.button.mindaro {
-    --_hover-color: var(--mindaro);
-}
+.button.blush { --_hover-color: var(--blush); }
+.button.mindaro { --_hover-color: var(--mindaro); }
 
 .about {
     padding-top: 1vh;

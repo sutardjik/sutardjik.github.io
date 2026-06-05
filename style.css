@@ -53,15 +53,28 @@ body {
     --font-body: NMB;
     --font-ui: TR;
     --fw: 100;
+    --opacity-hidden: 0;
+    --opacity-shown: 1;
     --hover-transition: 0.3s ease;
+    --hidden-transition: 3s ease;
     --margin: 0 auto;
+    --button-margin: 0.5em 0.5em 0.5em 0;
     --line-height: 1.5;
+    --padding-sm: 1vh;
+    --padding-md: 2vh;
+    --padding-lg: 5vh;
+    --line-margin: -10px;
     --line-weight: 1px;
     --space-xs: 5px;
     --space-sm: 10px;
     --space-md: 20px;
+    --space-md-plus-1: 30px;
+    --space-md-plus-2: 40px;
     --space-lg: 50px;
     --space-xl: 100px;
+    --space-xxl: 150px;
+    --arch-width: 250px;
+    --arch-height: 350px;
 }
 
 ::selection {
@@ -72,25 +85,25 @@ body {
 h1 {
     font-family: var(--font-display-light);
     font-weight: var(--fw);
-    font-size: 50px;
+    font-size: var(--space-lg);
 }
 
 h2 {
     font-family: var(--font-display);
     font-weight: var(--fw);
-    font-size: 40px;
+    font-size: var(--space-md-plus-2);
 }
 
 h3 {
     font-family: var(--font-display-light);
     font-weight: var(--fw);
-    font-size: 30px;
+    font-size: var(--space-md-plus-1);
 }
 
 p {
     font-family: var(--font-body);
     font-weight: var(--fw);
-    font-size: 20px;
+    font-size: var(--space-md);
 }
 
 a {
@@ -106,7 +119,7 @@ a {
 .mt-lg  { margin-top: var(--space-lg); }
 .mt-xl { margin-top: var(--space-xl); }
 
-.mb-0   { margin-bottom: 0; }
+.mb-0   { margin-bottom: var(--opacity-hidden); }
 .mb-xs  { margin-bottom: var(--space-xs); }
 .mb-sm  { margin-bottom: var(--space-sm); }
 .mb-md  { margin-bottom: var(--space-md); }
@@ -115,7 +128,7 @@ a {
 
 .pr-md { padding-right: var(--space-md); }
 
-.hr-tight { margin-top: -10px; }
+.hr-tight { margin-top: var(--line-margin); }
 
 .center { text-align: center; }
 
@@ -144,8 +157,8 @@ a {
 }
 
 .intro {
-    padding: 5vh 0 2vh;
     text-align: left;
+    padding: var(--padding-lg) var(--opacity-hidden) var(--padding-md);
     line-height: var(--line-height);
     background: var(--blue);
 }
@@ -162,14 +175,14 @@ a {
 .button {
     --_hover-color: var(--periwinkle);
     font-family: var(--font-ui);
-    font-size: 20px;
-    color: var(--black);
-    border-radius: 30px;
-    background-color: var(--blue);
+    font-size: var(--space-md);
     border: var(--line-weight) solid var(--black);
+    border-radius: var(--space-md-plus-1);
+    background-color: var(--blue);
+    color: var(--black);
     padding: var(--space-sm) var(--space-md);
+    margin: var(--button-margin);
     display: inline-block;
-    margin: 0.5em 0.5em 0.5em 0;
     transition: background var(--hover-transition), border var(--hover-transition);
 }
 
@@ -182,7 +195,7 @@ a {
 .button.mindaro { --_hover-color: var(--mindaro); }
 
 .about {
-    padding-top: 1vh;
+    padding-top: var(--padding-sm);
     line-height: var(--line-height);
 }
 
@@ -194,8 +207,8 @@ a {
 
 .arch {
     position: relative;
-    width: 250px;
-    height: 350px;
+    width: var(--arch-width);
+    height: var(--arch-height);
 }
 
 .arch img {
@@ -206,20 +219,20 @@ a {
     transition: opacity var(--hover-transition);
 }
 
-.arch .hover { opacity: 0; }
-.arch:hover .hover { opacity: 1; }
-.arch:hover .default { opacity: 0; }
+.arch .hover { opacity: var(--opacity-hidden); }
+.arch:hover .hover { opacity: var(--opacity-shown); }
+.arch:hover .default { opacity: var(--opacity-hidden); }
 
 .contact { padding-top: var(--space-md); }
 
 .contact-question {
     line-height: var(--line-height);
-    margin-top: 150px;
+    margin-top: var(--space-xxl);
 }
 
 .contact-answer {
     line-height: var(--line-height);
-    margin-top: -10px;
+    margin-top: var(--line-margin); 
 }
 
 .contact hr {
@@ -249,11 +262,11 @@ a {
 }
 
 .hidden {
-    opacity: 0;
-    transition: opacity 3s ease;
+    opacity: var(--opacity-hidden);
+    transition: opacity var(--hidden-transition);
 }
 
-.show { opacity: 1; }
+.show { opacity: var(--opacity-shown); }
 
 @media (prefers-reduced-motion: reduce) {
     .hidden {
@@ -273,7 +286,7 @@ a {
     .arch {
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 30px;
+        margin-bottom: var(--space-md-plus-1);
     }
 
     .socials {

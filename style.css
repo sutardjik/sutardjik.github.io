@@ -55,11 +55,11 @@ body {
     --fw: 100;
     --opacity-hidden: 0;
     --opacity-shown: 1;
+    --line-height: 1.5;
+    --margin: 0 auto;
     --hover-transition: 0.3s ease;
     --hidden-transition: 3s ease;
-    --margin: 0 auto;
     --button-margin: 0.5em 0.5em 0.5em 0;
-    --line-height: 1.5;
     --padding-sm: 1vh;
     --padding-md: 2vh;
     --padding-lg: 5vh;

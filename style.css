@@ -244,6 +244,7 @@ a {
 
 .getintouch {
     padding-top: var(--space-lg);
+    line-height: var(--line-height);
     height: fit-content;
 }
 

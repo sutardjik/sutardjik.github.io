@@ -13,9 +13,7 @@
     src: url(/fonts/PPRightGroteskMono-Fine.otf);
 }
 
-* {
-    box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
 html, 
 body {
@@ -88,6 +86,7 @@ h3 a {
     text-decoration: none;
 }
 
+a:hover { font-style: italic; }
 a:visited { color: var(--text); }
 
 p {
@@ -108,7 +107,6 @@ p {
 
 .text-apricot { color: var(--apricot); }
 .text-green { color: var(--green); }
-.link-hover:hover { font-style: italic; }
 
 .container {
     width: var(--width-xs);
